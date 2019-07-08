@@ -56,14 +56,14 @@ function showVersion() {
 
     const element = document.getElementById('version');
 
-    calculator.version
-        .then(function(version) {
-            element.innerText = version;
-        })
-        .catch(function(error) {
-            element.innerText = 'unknown';
-        });
-    // element.innerText = calculator.version;
+    // calculator.version
+    //     .then(function(version) {
+    //         element.innerText = version;
+    //     })
+    //     .catch(function(error) {
+    //         element.innerText = 'unknown';
+    //     });
+    element.innerText = calculator.version;
 }
 
 

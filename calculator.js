@@ -22,18 +22,18 @@ Calculator.prototype.divide = function (number) {
 }
 
 Object.defineProperty(Calculator.prototype, 'version', {
-    // get: function() {
-    //     return '0.1';
-    // },
     get: function() {
-        return fetch('') // needs a URL from which to fetch
-            .then(function(result) {
-                return result.json()
-            })
-            .then(function(json) {
-                return json.version;
-            })
+        return '0.1';
     },
+    // get: function() {
+    //     return fetch('') // needs a URL from which to fetch
+    //         .then(function(result) {
+    //             return result.json()
+    //         })
+    //         .then(function(json) {
+    //             return json.version;
+    //         })
+    // },
     enumerable: true,
     configurable: true
 })
